@@ -10,7 +10,7 @@ I found the most recent date in the dataset and utilizing functions from datetim
 
 I created a Pandas DataFrame with date and precipitation as columns. After sorting the dataframe by "date", I was able to plot the required chart shown below:
 
-![Precipitation Chart](SurfsUp/precipitation.png)
+![Precipitation Chart](SurfsUp/Images/precipitation.png)
 
 I then used the Pandas describe function to print the summary statistics for the precipitation data.
 
@@ -24,7 +24,7 @@ Then I drew a histagram using the temprature data of the previous 12 months of t
 
 Plot the results as a histogram with bins=12, as the following image shows:
 
-![TOBs Chart](SurfsUp/USC00519281.png)
+![TOBs Chart](SurfsUp/Images/USC00519281.png)
 
 
 ## Part 2: Design Your Climate App
@@ -39,9 +39,13 @@ Convert the query results from your precipitation analysis (i.e. retrieve only t
 
 Return the JSON representation of your dictionary.
 
+![prcp_api](SurfsUp/Images/precipitation_api.png)
+
 ### /api/v1.0/stations
 
 Return a JSON list of stations from the dataset.
+
+![stations_api](SurfsUp/Images/precipitationstations_api.png)
 
 ### /api/v1.0/tobs
 
@@ -49,11 +53,16 @@ Query the dates and temperature observations of the most-active station for the 
 
 Return a JSON list of temperature observations for the previous year.
 
+![tobs_api](SurfsUp/Images/tobs_api.png)
+
 ### /api/v1.0/<start> and /api/v1.0/<start>/<end>
 
 Return a JSON list of the minimum temperature, the average temperature, and the maximum temperature for a specified start or start-end range.
 
 For a specified start, calculate TMIN, TAVG, and TMAX for all the dates greater than or equal to the start date.
 
+![start_date](SurfsUp/Images/with_start_date.png)
+
 For a specified start date and end date, calculate TMIN, TAVG, and TMAX for the dates from the start date to the end date, inclusive.
 
+![start_end_date](SurfsUp/Images/with_start_end_date.png)
