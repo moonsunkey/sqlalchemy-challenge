@@ -45,7 +45,7 @@ Return the JSON representation of your dictionary.
 
 Return a JSON list of stations from the dataset.
 
-![stations_api](SurfsUp/Images/precipitationstations_api.png)
+![stations_api](SurfsUp/Images/stations_api.png)
 
 ### /api/v1.0/tobs
 
